@@ -2,6 +2,18 @@
 <html>
   <head>
 
+<!-- testing out adding in the new ga4 tag directly into the code vs via tag manager -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7NJJC385FE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7NJJC385FE');
+</script>
+
+<!-- original tag manager, only for UA-->
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -10,6 +22,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-PL2R2DV');</script>
 <!-- End Google Tag Manager -->
     
+  
+<!-- testing breaking tracking by implementing direct tag on top of tag manager-->    
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122459452-1"></script>
 <script>
@@ -18,7 +32,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   gtag('js', new Date());
 
   gtag('config', 'UA-122459452-1');
-  
+
   //alert("Stalker! :-o");
   
 </script>  
@@ -29,12 +43,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="shortcut icon" type="image/x-icon" href="https://ahm107.github.io/favicon.ico" />  
   </head>
   <body>
-    
+
+   
+<!-- testing having differing tag manager scripts-->
  <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PL2R2DV"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->   
- 
+
+    
     <div id="header">
       <div class="container">
         <a id="header-title"
